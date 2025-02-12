@@ -1,0 +1,34 @@
+  ┌───────────────────────────┐
+    │         Card              │
+    ├───────────────────────────┤
+  │ - name: String            │
+  │ - setCode: String         │
+  │ - rarity: String          │
+  │ - collectorNumber: String │
+  │ - price: double           │
+  │ - quantity: int           │
+  │ + getName(): String       │
+  │ + getSetCode(): String    │
+  │ + getRarity(): String     │
+  │ + getPrice(): double      │
+  │ + getQuantity(): int      │
+  │ + displayCardInfo(): void │
+  │ + updateStock(int): void  │
+    └───────────▲──────────────┘
+    │
+    │(Inheritance)
+    │
+    ──────────────────────────────────────────────────────────────
+    │                      │                     │
+    │                      │                     │
+    ┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐
+    │     MTGCard      │    │  PokemonCard     │    │   YugiohCard     │
+    ├──────────────────┤    ├──────────────────┤    ├──────────────────┤
+  │ - manaCost: String │  │ - energyType: String│  │ - attribute: String │
+  │ - cardType: String │  │ - hp: int          │  │ - level: int        │
+  │ - power: int       │  │ - retreatCost: int │  │ - atk: int          │
+  │ - toughness: int   │  │ - weakness: String │  │ - def: int          │
+  │ - loyalty: int     │  │ - resistance: String ││ - cardEffect: String │
+                 │ + displayCardInfo()│  │ + displayCardInfo()│  │ + displayCardInfo()│
+                 └──────────────────┘    └──────────────────┘    └──────────────────┘
+
