@@ -1,15 +1,19 @@
-public class Main {
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+    @Override
+    public void start(Stage primaryStage) {
+        VBox root = new CardUI().getView(); // Load UI from CardUI class
+        Scene scene = new Scene(root, 800, 500);
+        primaryStage.setTitle("TCG Inventory Manager");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
     public static void main(String[] args) {
-        DatabaseManager.listCards();
-
-        System.out.println("============================");
-        System.out.println("GATHERING INVENTORY TOTAL");
-        System.out.println("============================");
-
-        DatabaseManager.inventoryTotal();
-
-        System.out.println("Database URL: " + Config.get("DB_URL"));
-        System.out.println("Database User: " + Config.get("DB_USER"));
-        System.out.println("Database Password: " + Config.get("DB_PASSWORD"));
+        launch(args);
     }
 }

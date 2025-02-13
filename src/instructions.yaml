@@ -24,11 +24,11 @@
     ┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐
     │     MTGCard      │    │  PokemonCard     │    │   YugiohCard     │
     ├──────────────────┤    ├──────────────────┤    ├──────────────────┤
-  │ - manaCost: String │  │ - energyType: String│  │ - attribute: String │
-  │ - cardType: String │  │ - hp: int          │  │ - level: int        │
-  │ - power: int       │  │ - retreatCost: int │  │ - atk: int          │
-  │ - toughness: int   │  │ - weakness: String │  │ - def: int          │
-  │ - loyalty: int     │  │ - resistance: String ││ - cardEffect: String │
-                 │ + displayCardInfo()│  │ + displayCardInfo()│  │ + displayCardInfo()│
-                 └──────────────────┘    └──────────────────┘    └──────────────────┘
+    │ - manaCost: String │  │ - energyType: String│  │ - attribute: String │
+    │ - cardType: String │  │ - hp: int          │  │ - level: int        │
+    │ - power: int       │  │ - retreatCost: int │  │ - atk: int          │
+    │ - toughness: int   │  │ - weakness: String │  │ - def: int          │
+    │ - loyalty: int     │  │ - resistance: String ││ - cardEffect: String │
+    │ + displayCardInfo()│  │ + displayCardInfo()│  │ + displayCardInfo()│
+    └──────────────────┘    └──────────────────┘    └──────────────────┘
 
